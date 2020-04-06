@@ -59,6 +59,7 @@ a {
 main{
     text-align: center;
     margin: 57px;
+    margin-top: 16rem;
 }
 
 form{
@@ -169,10 +170,15 @@ footer{
         padding-bottom: 6px;
         justify-content: space-between;
     }
+    
     .brand{
         display: inline-flex;
         padding-left: 2rem;
     }
+    main{
+        margin-top: 9rem;
+    }
+
     ul{ 
         flex-direction: row;
         justify-content: center;
