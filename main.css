@@ -52,6 +52,34 @@ a {
     color: white;
 }
 
+main{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+label{
+    margin: 6px;
+}
+
+input[type="submit"]{
+    background: rgb(204, 195, 195);
+    color: white;
+    border-radius: 8px;
+}
+
+input[type="email"]{
+   border-radius: 8px;
+   padding: 5px;
+   width: 50%;
+   max-width: 16rem;
+}
 
 @media (min-width: 40rem) {
     header {
@@ -62,10 +90,6 @@ a {
     }
     .brand{
         display: inline-flex;
-    }
-
-    #nav-bar{
-        padding-right: 2rem;
     }
 
     ul{ 
