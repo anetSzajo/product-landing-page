@@ -1,8 +1,7 @@
-/* nav bar on top !!!! 
+
 inner links !!!!
-repair the footer
  */
- 
+
 html{
     width: 100vw;
     height: 100vh;
@@ -16,6 +15,8 @@ body{
 
 header{
     z-index: 1;
+    position: fixed;
+    top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,7 +126,7 @@ input[type="email"]{
 
 #video{
     width: -webkit-fill-available;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .workshops{
