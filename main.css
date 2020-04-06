@@ -1,11 +1,15 @@
 /* nav bar on top !!!! 
-inner links !!!! 
+inner links !!!!
+repair the footer
+responsivity!  -- ul for workshops on big screen, footer
  */
 html{
     width: 100vw;
+    height: 100vh;
 }
 body{
     width: 100vw;
+    height: 100vh;
     margin: 0;
     font-family: 'IM Fell French Canon SC', serif;
 }
@@ -128,7 +132,6 @@ input[type="email"]{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .workshop{
@@ -137,6 +140,7 @@ input[type="email"]{
     border: 2px solid rgb(204, 195, 195);
     margin: 16px;
     border-radius: 8px;
+    width: 100%;
 }
 
 .workshop h1{
@@ -182,7 +186,7 @@ footer{
     }
 
     .image-container{
-        width: 50%;
+        max-width: 40%;
     }
         
     #video{
@@ -191,5 +195,9 @@ footer{
     }
     .workshops{
         flex-direction: row;
+    }
+    .workshop ul{
+        display: flex;
+        flex-direction: column;
     }
 }
