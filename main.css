@@ -1,6 +1,8 @@
-/* nav bar on top
+/* nav bar on top !!!! 
 one media query
 use flexbox
+add footer
+inner links !!!! 
  */
 html{
     width: 100vw;
@@ -8,7 +10,7 @@ html{
 body{
     width: 100vw;
     margin: 0;
-    
+    font-family: 'IM Fell French Canon SC', serif;
 }
 
 header{
@@ -69,7 +71,8 @@ label{
     margin: 6px;
 }
 
-input[type="submit"]{
+input[type="submit"],
+button{
     background: rgb(204, 195, 195);
     color: white;
     border-radius: 8px;
@@ -85,7 +88,7 @@ input[type="email"]{
 .about-us{
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -118,6 +121,39 @@ input[type="email"]{
     width: 100%;
 }
 
+#video{
+    width: -webkit-fill-available;
+    margin-bottom: 2rem;
+}
+
+.workshops{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workshop{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(204, 195, 195);
+    margin: 16px;
+    border-radius: 8px;
+}
+
+.workshop h1{
+    background: rgb(204, 195, 195);
+    margin: unset;
+    padding: 8px;
+    font-size: 21px;
+}
+
+.workshop p{
+    padding: 0.5rem;
+    margin-bottom: 0;
+    font-size: 21px;
+}
+
 @media (min-width: 40rem) {
     header {
         flex-direction: row;
@@ -144,5 +180,13 @@ input[type="email"]{
 
     .image-container{
         width: 50%;
+    }
+        
+    #video{
+        width: 560px;
+        height: 315px;
+    }
+    .workshops{
+        flex-direction: row;
     }
 }
