@@ -1,7 +1,4 @@
 /* nav bar on top !!!! 
-one media query
-use flexbox
-add footer
 inner links !!!! 
  */
 html{
@@ -76,6 +73,7 @@ button{
     background: rgb(204, 195, 195);
     color: white;
     border-radius: 8px;
+    margin: 4px;
 }
 
 input[type="email"]{
@@ -152,6 +150,11 @@ input[type="email"]{
     padding: 0.5rem;
     margin-bottom: 0;
     font-size: 21px;
+}
+
+footer{
+    background: rgb(204, 195, 195);
+    padding: 2px 6px;
 }
 
 @media (min-width: 40rem) {
