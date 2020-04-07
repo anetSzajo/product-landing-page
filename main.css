@@ -15,7 +15,8 @@ header{
     position: fixed;
     top: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     background: rgb(204, 195, 195);
     width: 100%;
@@ -30,6 +31,31 @@ header h1{
 #header-img{
     width: 2.5rem;
     height: 2.5rem;
+}
+
+.hamburger-button {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(42, 58, 53);
+    margin: 0 6px 0 0;
+    padding: 10px;
+}
+
+.hamburger-button__bar {
+    background: rgb(42, 58, 53);
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 0.2rem;
+}
+
+.visible {
+    display: block;
+}
+
+#nav-bar{
+    display: none;
 }
 
 .brand{
@@ -57,7 +83,7 @@ a {
 main{
     text-align: center;
     margin: 57px;
-    margin-top: 16rem;
+    margin-top: 11rem;
 }
 
 form{
@@ -171,6 +197,15 @@ a.anchor{
     top: -250px;
     visibility: hidden;
 } 
+
+@media screen and (min-width: 430px) {
+    .hamburger-button {
+        display: none;
+    }
+    /* .nav-bar {
+        display: inline-block;
+    } */
+}
 
 @media (min-width: 40rem) {
     header {
